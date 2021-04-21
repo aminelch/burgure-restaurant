@@ -1,0 +1,105 @@
+/*======================================================
+ GOOGLE FONTS
+=======================================================*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap");
+/*======================================================
+ VARIABLES
+=======================================================*/
+/*======================================================
+ BASE
+=======================================================*/
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.header {
+  margin: 0;
+  padding: 0;
+  border-bottom: 5px solid #6f6f6f6f;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.header .brand {
+  font-size: 2.8rem;
+  margin-right: 61px;
+  font-family: "Playfair Display", sans-serif;
+  font-weight: bold;
+  display: inline-block;
+  color: #717171;
+}
+.header .header__nav {
+  padding-top: 15px;
+}
+.header .header__nav a {
+  margin-right: 10px;
+  text-decoration: none;
+  opacity: 0.8;
+  color: inherit;
+  padding-bottom: 3px;
+  transition: opacity 0.3s ease, border-bottom;
+}
+.header .header__nav a:hover {
+  border-bottom: 2px solid black;
+  opacity: 1;
+}
+
+.btn {
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  outline: none;
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  font-weight: bold;
+  background: whitesmoke;
+  border: none;
+  opacity: 0.9;
+  cursor: pointer;
+  transition: opacity 0.3s ease, scale 0.3s ease;
+}
+.btn:hover {
+  transform: scale(1.03);
+  opacity: 1;
+}
+
+.main {
+  border: 1px solid yellowgreen;
+}
+.main .hero {
+  text-align: center;
+  background: url("../img/background-header.jpg") top left no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 160px;
+  margin-top: 0;
+  color: wheat;
+}
+.main .hero .hero__title {
+  font-size: 2.4rem;
+  margin: 10px 0 15px 0;
+  font-family: "Playfair Display", sans-serif;
+  font-weight: bold;
+}
+.main .hero p {
+  text-transform: uppercase;
+  border-bottom: 1px solid white;
+  margin-top: 0;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    background-color: #6f6f6f6f;
+  }
+}
+
+/*# sourceMappingURL=app.css.map */
