@@ -96,10 +96,4 @@ body {
   font-weight: 700;
 }
 
-@media screen and (max-width: 500px) {
-  body {
-    background-color: #6f6f6f6f;
-  }
-}
-
 /*# sourceMappingURL=app.css.map */
