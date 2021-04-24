@@ -198,14 +198,16 @@ a {
 =======================================================*/
 .footer {
     background-color: #000000;
+    border-top: 5px solid #6f6f6f;
     color: white;
 
     .footer__title {
         padding: 10px 20px;
         font-style: 2rem;
-        font-family: $secondary-font;
+        font-family: $secondary-font, sans-serif;
         border-bottom: 1px solid white;
         width: 20%;
+        margin-bottom: 20px;
     }
 
     .footer__content {
@@ -213,11 +215,12 @@ a {
         flex-wrap: wrap;
         justify-content: center;
         max-width: 90%;
-        margin: 20px auto;
+        //margin: 20px auto;
 
         .col {
-            max-width: 33.33%;
-            // width: auto;
+            margin-right: 30px;
+            width: auto;
+            max-width: 300px;
             margin-bottom: 10px;
         }
     }

@@ -224,24 +224,27 @@ a:hover {
 =======================================================*/
 .footer {
   background-color: #000000;
+  border-top: 5px solid #6f6f6f;
   color: white;
 }
 .footer .footer__title {
   padding: 10px 20px;
   font-style: 2rem;
-  font-family: "Playfair Display";
+  font-family: "Playfair Display", sans-serif;
   border-bottom: 1px solid white;
   width: 20%;
+  margin-bottom: 20px;
 }
 .footer .footer__content {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   max-width: 90%;
-  margin: 20px auto;
 }
 .footer .footer__content .col {
-  max-width: 33.33%;
+  margin-right: 30px;
+  width: auto;
+  max-width: 300px;
   margin-bottom: 10px;
 }
 .footer .footer__copyright {
