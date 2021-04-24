@@ -1,136 +1,69 @@
-/*======================================================
- IMPORTS
-=======================================================*/
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap");
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
 html,
 body,
-div,
-span,
-applet,
-object,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
 iframe,
+hr,
 h1,
 h2,
 h3,
 h4,
 h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+h6 {
   margin: 0;
   padding: 0;
-  border: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+  font-weight: normal;
 }
 
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol,
 ul {
   list-style: none;
 }
 
-blockquote,
-q {
-  quotes: none;
+button,
+input,
+select {
+  margin: 0;
 }
 
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
 }
 
 table {
@@ -138,9 +71,11 @@ table {
   border-spacing: 0;
 }
 
-/*======================================================
- GOOGLE FONTS
-=======================================================*/
+td,
+th {
+  padding: 0;
+}
+
 /*======================================================
  VARIABLES
 =======================================================*/
@@ -171,7 +106,7 @@ a:hover {
 
 .header {
   margin: 0;
-  padding: 0;
+  padding-bottom: 20px;
   border-bottom: 5px solid #6f6f6f6f;
   display: flex;
   flex-wrap: wrap;
@@ -206,7 +141,7 @@ a:hover {
   padding: 10px 15px;
   margin-bottom: 10px;
   outline: none;
-  font-family: "Montserrat";
+  font-family: "Playfair Display";
   text-transform: uppercase;
   font-weight: bold;
   background: whitesmoke;
@@ -239,31 +174,75 @@ a:hover {
 .main .hero p {
   text-transform: uppercase;
   border-bottom: 1px solid white;
-  margin-top: 0;
+  margin: 1.2rem 0;
+  padding: 3px 20px;
   font-weight: 700;
   display: inline-block;
+  width: auto;
 }
 
+.content {
+  padding: 10px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content .card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.content .card .card__content {
+  background: black;
+  color: white;
+  padding: 10px 20px;
+  flex: 0 0 30%;
+}
+.content .card .card__content .card__title {
+  color: inherit;
+  font-size: 2.2rem;
+  margin-bottom: 0.6rem;
+}
+.content .card .card__content p {
+  padding: 0;
+  margin: 0;
+  line-height: 1.8rem;
+}
+.content .card .card__image {
+  flex: 0 0 70%;
+  margin-top: 5px;
+}
+.content .card .card__image img {
+  width: 100%;
+  max-width: 400px;
+  height: 300px;
+}
+
+/*======================================================
+ FOOTER
+=======================================================*/
 .footer {
   background-color: #000000;
   color: white;
 }
 .footer .footer__title {
   padding: 10px 20px;
+  font-style: 2rem;
   font-family: "Playfair Display";
-  font-weight: 700;
   border-bottom: 1px solid white;
   width: 20%;
 }
 .footer .footer__content {
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
   max-width: 90%;
   margin: 20px auto;
 }
 .footer .footer__content .col {
-  width: 33.33%;
+  max-width: 33.33%;
+  margin-bottom: 10px;
 }
 .footer .footer__copyright {
   text-align: center;
@@ -271,14 +250,18 @@ a:hover {
   margin-top: 20px;
 }
 
+.secondary-title {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/*======================================================
+ MEDIA QUERIES
+=======================================================*/
 @media screen and (max-width: 500px) {
   body {
     background-color: #6f6f6f6f;
-  }
-}
-@media screen and (max-width: 1150px) {
-  .footer__content {
-    flex-wrap: wrap;
   }
 }
 
