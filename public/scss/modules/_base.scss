@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: $primary-font, sans-serif;
+}
+
+::selection {
+    background: rgba(255, 197, 118, .9);
+    color: #1f2235
+}
+
+::-webkit-scrollbar {
+    width: 10px
+}
+
+::-webkit-scrollbar-track {
+    background: #f2f2f2;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #010101;
+    // border-radius: 20%;
+
+}
+
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+    opacity: 0.7;
+
+    transition: opacity 0.3s ease, transform 0.3s;
+
+    &:hover {
+        text-decoration: underline;
+        opacity: 1;
+
+    }
+}
+
+.btn {
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    outline: none;
+    font-family: $secondary-font;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: whitesmoke;
+    border: none;
+    opacity: 0.9;
+    cursor: pointer;
+    transition: opacity 0.3s ease, scale 0.3s ease;
+
+    &:hover {
+        transform: scale(1.03);
+        opacity: 1;
+    }
+}
